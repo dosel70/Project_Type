@@ -1,0 +1,2210 @@
+{% extends 'manufact/base.html' %}
+{% load static %}
+{% block static %}
+        <link rel="stylesheet" href="{% static 'ai/css/manufactSub.css' %}" />
+{% endblock %}
+    {% block title %}제품제조 실행 페이지{% endblock %}
+{% block content %}
+    <form method="post" action="{% url 'ai:manufact-sub' %}" enctype="multipart/form-data" name="manunfact-sub">
+    {% csrf_token %}
+        <div id="root">
+            <a id="page-1" aria-hidden="true" style="visibility: hidden"></a>
+            <section
+                id="d7GHUgx067wmSpte"
+                style="
+                    position: relative;
+                    overflow: hidden;
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: auto 100rem auto;
+                    z-index: 0;
+                "
+            >
+                <div
+                    id="J8WycdZDkfyiajp3"
+                    style="
+                        grid-area: 1 / 1 / 2 / 4;
+                        display: grid;
+                        position: absolute;
+                        min-height: 100%;
+                        min-width: 100%;
+                    "
+                >
+                    <div id="J0bRB8eeYmO6MTGO" style="z-index: 0">
+                        <div
+                            id="VGB4YVS6ZeVlYTEW"
+                            style="
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 100%;
+                                transform: rotate(0deg);
+                            "
+                        >
+                            <div
+                                id="p38lUoluXlFmJxbA"
+                                style="width: 100%; height: 100%; opacity: 1"
+                            >
+                                <div
+                                    id="Wx0ENJL26ZowlR1y"
+                                    style="
+                                        background-color: #004b84;
+                                        opacity: 1;
+                                        transform: scale(1, 1);
+                                        width: 100%;
+                                        height: 100%;
+                                        overflow: hidden;
+                                        position: relative;
+                                    "
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    id="j7HNcwVhf9PyYVUg"
+                    style="
+                        display: grid;
+                        position: relative;
+                        grid-area: 1 / 2 / 2 / 3;
+                    "
+                >
+                    <div id="jBN6bSTAUcGxMjID" style="z-index: 24">
+                        <div
+                            id="YReciHEKrvQsU7Ps"
+                            style="
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 100%;
+                            "
+                        >
+                            <div
+                                class="animation_container"
+                                style="width: 100%; height: 100%"
+                            >
+                                <div
+                                    style="
+                                        width: 100%;
+                                        height: 100%;
+                                        transform: rotate(0deg);
+                                        overflow: hidden;
+                                    "
+                                >
+                                    <div
+                                        class="animated"
+                                        style="
+                                            width: 100%;
+                                            height: 100%;
+                                            animation: 1351ms ease 100ms 1
+                                                normal both running
+                                                baseline-LEFT-7bc3a304-4154-4b33-a99c-a916ad9fc697;
+                                        "
+                                    >
+                                        <div
+                                            id="BEO3sSrse6PSVigE"
+                                            style="
+                                                opacity: 1;
+                                                display: flex;
+                                                box-sizing: border-box;
+                                                flex-direction: column;
+                                                justify-content: flex-start;
+                                                width: 100%;
+                                                height: 100%;
+                                            "
+                                        >
+                                            <p
+                                                id="Ytd9hAqx6NC3tHr0"
+                                                style="
+                                                    color: #ffffff;
+                                                    direction: ltr;
+                                                    font-family: YAFdJjbTu24-1;
+                                                    margin-left: 0em;
+                                                    line-height: 1.19531157em;
+                                                    text-align: center;
+                                                    text-transform: none;
+                                                    letter-spacing: 0em;
+                                                "
+                                            >
+                                                <span
+                                                    id="fOoTXhPkVB8zLTWl"
+                                                    style="
+                                                        color: #ffffff;
+                                                        font-weight: 500;
+                                                    "
+                                                    >제품 제조 품질 평가 점수
+                                                    예측</span
+                                                ><br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--온도 입력 창 !-->
+{#                    <div id="pCPGNAhm6S8qvjRm">#}
+{#                        <div#}
+{#                            id="eBW4npTJJ1EmOEmg"#}
+{#                            style="display: grid; position: relative"#}
+{#                        >#}
+{#                            <div#}
+{#                                id="nBQodiwiWoe6Poeo"#}
+{#                                style="#}
+{#                                    display: grid;#}
+{#                                    position: relative;#}
+{#                                    grid-area: 2 / 2 / 3 / 3;#}
+{#                                "#}
+{#                            >#}
+{#                                <div id="EOL39UNoo7fWVVSL" style="z-index: 5">#}
+{#                                    <div#}
+{#                                        id="Ttba1blKol4wgyR5"#}
+{#                                        style="#}
+{#                                            box-sizing: border-box;#}
+{#                                            width: 100%;#}
+{#                                            height: 100%;#}
+{#                                            transform: rotate(0deg);#}
+{#                                        "#}
+{#                                    >#}
+{#                                        <svg#}
+{#                                            id="x1IjXoM69YcJmfZZ"#}
+{#                                            viewBox="0 0 131.0163 31.5842"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="uIw563X3ShaoEiRU"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="KGhiFFE7LkxZIaAd"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#HVq3PX4HEyeIPppY);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="HVq3PX4HEyeIPppY"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.80640293 C131.01629639,30.3405273 129.77264286,31.58418083 128.23851849,31.58418083 L2.7777779,31.58418083 C2.0410654,31.58418083 1.33452672,31.29152293 0.81359231,30.77058852 0.2926579,30.24965411 0,29.54311543 0,28.80640293 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="CGr9ZdfMbdfZGyuS"#}
+{#                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.80640293 C131.01629639,30.3405273 129.77264286,31.58418083 128.23851849,31.58418083 L2.7777779,31.58418083 C2.0410654,31.58418083 1.33452672,31.29152293 0.81359231,30.77058852 0.2926579,30.24965411 0,29.54311543 0,28.80640293 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="tuoIDs6kkf10HLdl"#}
+{#                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.80640293 C131.01629639,30.3405273 129.77264286,31.58418083 128.23851849,31.58418083 L2.7777779,31.58418083 C2.0410654,31.58418083 1.33452672,31.29152293 0.81359231,30.77058852 0.2926579,30.24965411 0,29.54311543 0,28.80640293 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g></svg#}
+{#                                        ><svg#}
+{#                                            id="jrNXIXr5GkmLZRJq"#}
+{#                                            viewBox="0 0 124.4444 36.876"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="y7nKSEFBkiFQhjg9"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="LZhhkKyShmq4goZn"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#CFbaRjLgy7Ayghfl);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="CFbaRjLgy7Ayghfl"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.23753078 C124.44444275,35.69470204 123.26317204,36.87597275 121.80600078,36.87597275 L2.63844197,36.87597275 C1.18127071,36.87597275 0,35.69470204 0,34.23753078 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="Rwh1yG0DeFI4ofYg"#}
+{#                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.23753078 C124.44444275,35.69470204 123.26317204,36.87597275 121.80600078,36.87597275 L2.63844197,36.87597275 C1.18127071,36.87597275 0,35.69470204 0,34.23753078 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="k6MLdVaOtFBLE2cm"#}
+{#                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.23753078 C124.44444275,35.69470204 123.26317204,36.87597275 121.80600078,36.87597275 L2.63844197,36.87597275 C1.18127071,36.87597275 0,35.69470204 0,34.23753078 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g></svg#}
+{#                                        ><svg#}
+{#                                            id="tM7A1aRl8VkwMZJT"#}
+{#                                            viewBox="0 0 95.2778 32.0085"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="szsG0fTWsAto7Ex9"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="oW2gTsJL2u2zJFnt"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#CkmMhltfKtLSHFP8);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="CkmMhltfKtLSHFP8"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.98847134 C95.27777863,30.52422412 95.06495166,31.03803386 94.68611724,31.41686828 94.30728282,31.7957027 93.79347308,32.00852966 93.2577203,32.00852966 L2.02005832,32.00852966 C1.48430555,32.00852966 0.97049581,31.7957027 0.59166138,31.41686828 0.21282696,31.03803386 0,30.52422412 0,29.98847134 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="qWI1Mff1Fayrf7V5"#}
+{#                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.98847134 C95.27777863,30.52422412 95.06495166,31.03803386 94.68611724,31.41686828 94.30728282,31.7957027 93.79347308,32.00852966 93.2577203,32.00852966 L2.02005832,32.00852966 C1.48430555,32.00852966 0.97049581,31.7957027 0.59166138,31.41686828 0.21282696,31.03803386 0,30.52422412 0,29.98847134 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="UhMhbpLvGJMhWTpX"#}
+{#                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.98847134 C95.27777863,30.52422412 95.06495166,31.03803386 94.68611724,31.41686828 94.30728282,31.7957027 93.79347308,32.00852966 93.2577203,32.00852966 L2.02005832,32.00852966 C1.48430555,32.00852966 0.97049581,31.7957027 0.59166138,31.41686828 0.21282696,31.03803386 0,30.52422412 0,29.98847134 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g>#}
+{#                                        </svg>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <!--온도 입력 창 !-->#}
+{#                                <div#}
+{#                                    id="QJEQ7ucCEwn70lGn"#}
+{#                                    style="#}
+{#                                        display: grid;#}
+{#                                        position: relative;#}
+{#                                        grid-area: 3 / 3 / 4 / 4;#}
+{#                                    "#}
+{#                                >#}
+{#                                    <div#}
+{#                                        id="HJEi2CqgKwmpZSE2"#}
+{#                                        style="z-index: 6"#}
+{#                                    >#}
+{#                                        <div#}
+{#                                            id="nieTFqF0dGJL6fCe"#}
+{#                                            style="#}
+{#                                                box-sizing: border-box;#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                transform: rotate(0deg);#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <div#}
+{#                                                id="XDkDp4CxvMNBs7wI"#}
+{#                                                style="#}
+{#                                                    opacity: 1;#}
+{#                                                    display: flex;#}
+{#                                                    box-sizing: border-box;#}
+{#                                                    flex-direction: column;#}
+{#                                                    justify-content: center;#}
+{#                                                    width: 100%;#}
+{#                                                    height: 100%;#}
+{#                                                "#}
+{#                                            >#}
+{#                                                <p#}
+{#                                                    id="pVHy58OHsV3DLAr3"#}
+{#                                                    style="#}
+{#                                                        color: #fefefe;#}
+{#                                                        direction: ltr;#}
+{#                                                        font-family: YAFdJjbTu24-1;#}
+{#                                                        margin-left: 0em;#}
+{#                                                        line-height: 1.17187683em;#}
+{#                                                        text-transform: uppercase;#}
+{#                                                        letter-spacing: 0.032em;#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <span#}
+{#                                                        id="vDfMEYhe2v9TssVh"#}
+{#                                                        style="#}
+{#                                                            color: #fefefe;#}
+{#                                                            font-weight: 600;#}
+{#                                                        "#}
+{#                                                        >제조​ 온도 입력 </span#}
+{#                                                    ><br />#}
+{#                                                </p>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                    <div#}
+{#                                        id="DNNumnvJufGXwxch"#}
+{#                                        style="z-index: 19"#}
+{#                                    >#}
+{#                                        <div#}
+{#                                            id="JYai2uNVTwqJNS7D"#}
+{#                                            style="#}
+{#                                                padding-top: 100%;#}
+{#                                                transform: rotate(0deg);#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <div#}
+{#                                                id="HCwab5h6xaSLixGM"#}
+{#                                                style="#}
+{#                                                    position: absolute;#}
+{#                                                    top: 0px;#}
+{#                                                    left: 0px;#}
+{#                                                    width: 100%;#}
+{#                                                    height: 100%;#}
+{#                                                "#}
+{#                                            >#}
+{#                                                <div#}
+{#                                                    id="zOIj0l433mEy2hIY"#}
+{#                                                    style="#}
+{#                                                        width: 100%;#}
+{#                                                        height: 100%;#}
+{#                                                        opacity: 1;#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <div#}
+{#                                                        id="viw5B4lXcDo2T9O4"#}
+{#                                                        style="#}
+{#                                                            transform: scale(#}
+{#                                                                1,#}
+{#                                                                1#}
+{#                                                            );#}
+{#                                                            width: 100%;#}
+{#                                                            height: 100%;#}
+{#                                                            overflow: hidden;#}
+{#                                                            position: relative;#}
+{#                                                        "#}
+{#                                                    >#}
+{#                                                        <div#}
+{#                                                            id="eCpPiU2Kj08M1wga"#}
+{#                                                            class="scale_rotated_fill_v2"#}
+{#                                                            data-aspect-ratio="1"#}
+{#                                                            style="#}
+{#                                                                width: calc(#}
+{#                                                                    100% *#}
+{#                                                                        max(#}
+{#                                                                            1,#}
+{#                                                                            var(#}
+{#                                                                                --scale-fill,#}
+{#                                                                                1#}
+{#                                                                            )#}
+{#                                                                        )#}
+{#                                                                );#}
+{#                                                                height: calc(#}
+{#                                                                    100% /#}
+{#                                                                        min(#}
+{#                                                                            1,#}
+{#                                                                            var(#}
+{#                                                                                --scale-fill,#}
+{#                                                                                1#}
+{#                                                                            )#}
+{#                                                                        )#}
+{#                                                                );#}
+{#                                                                position: absolute;#}
+{#                                                                top: 50%;#}
+{#                                                                left: 50%;#}
+{#                                                                opacity: 1;#}
+{#                                                                animation: auto#}
+{#                                                                    ease 0s 1#}
+{#                                                                    normal none#}
+{#                                                                    running none;#}
+{#                                                                --scale-fill: 1;#}
+{#                                                            "#}
+{#                                                        >#}
+{#                                                            <img#}
+{#                                                                src="https://doselaka.my.canva.site/images/39545a0a4a99079c7527dbfc41ee4b46.svg"#}
+{#                                                                alt="Download Outline Icon"#}
+{#                                                                loading="lazy"#}
+{#                                                                style="#}
+{#                                                                    width: 100%;#}
+{#                                                                    height: 100%;#}
+{#                                                                    display: block;#}
+{#                                                                    object-fit: cover;#}
+{#                                                                    object-position: 50%#}
+{#                                                                        50%;#}
+{#                                                                    transform: translate(#}
+{#                                                                            -50%,#}
+{#                                                                            -50%#}
+{#                                                                        )#}
+{#                                                                        rotate(#}
+{#                                                                            -90deg#}
+{#                                                                        );#}
+{#                                                                "#}
+{#                                                            />#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <!--온도 입력 창 끝 !-->#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                    <!--온도 입력 창 끝 !-->
+                    <!--압력 입력 창-->
+{#                    <div id="rPFbMidDpOWMGC1y">#}
+{#                        <div#}
+{#                            id="h6xsXNgMgzB1lTvm"#}
+{#                            style="display: grid; position: relative"#}
+{#                        >#}
+{#                            <div#}
+{#                                id="WEec5X7YUzhY82v3"#}
+{#                                style="#}
+{#                                    display: grid;#}
+{#                                    position: relative;#}
+{#                                    grid-area: 2 / 2 / 3 / 3;#}
+{#                                "#}
+{#                            >#}
+{#                                <div id="H23eaZKNr8h5qUbM" style="z-index: 14">#}
+{#                                    <div#}
+{#                                        id="IjlckjKZkhDgjXio"#}
+{#                                        style="#}
+{#                                            box-sizing: border-box;#}
+{#                                            width: 100%;#}
+{#                                            height: 100%;#}
+{#                                            transform: rotate(0deg);#}
+{#                                        "#}
+{#                                    >#}
+{#                                        <svg#}
+{#                                            id="E2qU6E0qRUBZfCTx"#}
+{#                                            viewBox="0 0 131.0163 31.5842"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="U3uiZdQ735u7Gk0c"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="ErPwZ2Jxu5bFRdHb"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#cpq7iRjT6oFxNcl6);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="cpq7iRjT6oFxNcl6"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.80640293 C131.01629639,30.3405273 129.77264286,31.58418083 128.23851849,31.58418083 L2.7777779,31.58418083 C2.0410654,31.58418083 1.33452672,31.29152293 0.81359231,30.77058852 0.2926579,30.24965411 0,29.54311543 0,28.80640293 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="X7jRGTzF5Sv7lRzH"#}
+{#                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.80640293 C131.01629639,30.3405273 129.77264286,31.58418083 128.23851849,31.58418083 L2.7777779,31.58418083 C2.0410654,31.58418083 1.33452672,31.29152293 0.81359231,30.77058852 0.2926579,30.24965411 0,29.54311543 0,28.80640293 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="lnb65Fl4yAUXENbE"#}
+{#                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.80640293 C131.01629639,30.3405273 129.77264286,31.58418083 128.23851849,31.58418083 L2.7777779,31.58418083 C2.0410654,31.58418083 1.33452672,31.29152293 0.81359231,30.77058852 0.2926579,30.24965411 0,29.54311543 0,28.80640293 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g></svg#}
+{#                                        ><svg#}
+{#                                            id="ogqw9V4HnMwtGZOS"#}
+{#                                            viewBox="0 0 124.4444 36.876"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="mF6mrOi2n0m1IhDZ"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="PVWYLFcrJ9Vfy377"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#mdM3T56wulz06PHY);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="mdM3T56wulz06PHY"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.23753078 C124.44444275,35.69470204 123.26317204,36.87597275 121.80600078,36.87597275 L2.63844197,36.87597275 C1.18127071,36.87597275 0,35.69470204 0,34.23753078 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="oVY55fsHSgPgwMue"#}
+{#                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.23753078 C124.44444275,35.69470204 123.26317204,36.87597275 121.80600078,36.87597275 L2.63844197,36.87597275 C1.18127071,36.87597275 0,35.69470204 0,34.23753078 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="B9UYoi8t7ncKDBSr"#}
+{#                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.23753078 C124.44444275,35.69470204 123.26317204,36.87597275 121.80600078,36.87597275 L2.63844197,36.87597275 C1.18127071,36.87597275 0,35.69470204 0,34.23753078 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g></svg#}
+{#                                        ><svg#}
+{#                                            id="WfA9AgAFc36cyqT0"#}
+{#                                            viewBox="0 0 95.2778 32.0085"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="H54OjfVlrI5lbQfR"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="iuZ1F8w6hdO4RTmt"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#ZxalBjSprAyczadh);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="ZxalBjSprAyczadh"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.98847134 C95.27777863,30.52422412 95.06495166,31.03803386 94.68611724,31.41686828 94.30728282,31.7957027 93.79347308,32.00852966 93.2577203,32.00852966 L2.02005832,32.00852966 C1.48430555,32.00852966 0.97049581,31.7957027 0.59166138,31.41686828 0.21282696,31.03803386 0,30.52422412 0,29.98847134 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="uzr7gSZacgHDc3pU"#}
+{#                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.98847134 C95.27777863,30.52422412 95.06495166,31.03803386 94.68611724,31.41686828 94.30728282,31.7957027 93.79347308,32.00852966 93.2577203,32.00852966 L2.02005832,32.00852966 C1.48430555,32.00852966 0.97049581,31.7957027 0.59166138,31.41686828 0.21282696,31.03803386 0,30.52422412 0,29.98847134 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="DAN9s1bVOBaD46fK"#}
+{#                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.98847134 C95.27777863,30.52422412 95.06495166,31.03803386 94.68611724,31.41686828 94.30728282,31.7957027 93.79347308,32.00852966 93.2577203,32.00852966 L2.02005832,32.00852966 C1.48430555,32.00852966 0.97049581,31.7957027 0.59166138,31.41686828 0.21282696,31.03803386 0,30.52422412 0,29.98847134 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g>#}
+{#                                        </svg>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div#}
+{#                                    id="RRq1UupNpSeHKmCg"#}
+{#                                    style="#}
+{#                                        display: grid;#}
+{#                                        position: relative;#}
+{#                                        grid-area: 3 / 3 / 4 / 4;#}
+{#                                    "#}
+{#                                >#}
+{#                                    <div#}
+{#                                        id="kl91XM86YtFhkjxr"#}
+{#                                        style="z-index: 15"#}
+{#                                    >#}
+{#                                        <div#}
+{#                                            id="Yl3k7Crrg8LtYM8I"#}
+{#                                            style="#}
+{#                                                box-sizing: border-box;#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                transform: rotate(0deg);#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <div#}
+{#                                                id="amQ4ZrpLcRmVWNHV"#}
+{#                                                style="#}
+{#                                                    opacity: 1;#}
+{#                                                    display: flex;#}
+{#                                                    box-sizing: border-box;#}
+{#                                                    flex-direction: column;#}
+{#                                                    justify-content: center;#}
+{#                                                    width: 100%;#}
+{#                                                    height: 100%;#}
+{#                                                "#}
+{#                                            >#}
+{#                                                <p#}
+{#                                                    id="PtcVUFQFSL6nW0Ol"#}
+{#                                                    style="#}
+{#                                                        color: #fefefe;#}
+{#                                                        direction: ltr;#}
+{#                                                        font-family: YAFdJjbTu24-1;#}
+{#                                                        margin-left: 0em;#}
+{#                                                        line-height: 1.17187683em;#}
+{#                                                        text-transform: uppercase;#}
+{#                                                        letter-spacing: 0.032em;#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <span#}
+{#                                                        id="vZPmpB9TRcmFLmmI"#}
+{#                                                        style="color: #fefefe"#}
+{#                                                        >제조​ 압력 입력 </span#}
+{#                                                    ><br />#}
+{#                                                </p>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                    <div#}
+{#                                        id="y1CCiyRHyO2bisBi"#}
+{#                                        style="z-index: 23"#}
+{#                                    >#}
+{#                                        <div#}
+{#                                            id="nR27OgHZaEG1Ib3x"#}
+{#                                            style="#}
+{#                                                padding-top: 100%;#}
+{#                                                transform: rotate(0deg);#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <div#}
+{#                                                id="FSjHyNGRgrYF9H3Y"#}
+{#                                                style="#}
+{#                                                    position: absolute;#}
+{#                                                    top: 0px;#}
+{#                                                    left: 0px;#}
+{#                                                    width: 100%;#}
+{#                                                    height: 100%;#}
+{#                                                "#}
+{#                                            >#}
+{#                                                <div#}
+{#                                                    id="tjXbvMzF3zQHyL2s"#}
+{#                                                    style="#}
+{#                                                        width: 100%;#}
+{#                                                        height: 100%;#}
+{#                                                        opacity: 1;#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <div#}
+{#                                                        id="INcRJcJ0NbNYVoWO"#}
+{#                                                        style="#}
+{#                                                            transform: scale(#}
+{#                                                                1,#}
+{#                                                                1#}
+{#                                                            );#}
+{#                                                            width: 100%;#}
+{#                                                            height: 100%;#}
+{#                                                            overflow: hidden;#}
+{#                                                            position: relative;#}
+{#                                                        "#}
+{#                                                    >#}
+{#                                                        <div#}
+{#                                                            id="i0AnD87u0buDKGln"#}
+{#                                                            class="scale_rotated_fill_v2"#}
+{#                                                            data-aspect-ratio="1"#}
+{#                                                            style="#}
+{#                                                                width: calc(#}
+{#                                                                    100% *#}
+{#                                                                        max(#}
+{#                                                                            1,#}
+{#                                                                            var(#}
+{#                                                                                --scale-fill,#}
+{#                                                                                1#}
+{#                                                                            )#}
+{#                                                                        )#}
+{#                                                                );#}
+{#                                                                height: calc(#}
+{#                                                                    100% /#}
+{#                                                                        min(#}
+{#                                                                            1,#}
+{#                                                                            var(#}
+{#                                                                                --scale-fill,#}
+{#                                                                                1#}
+{#                                                                            )#}
+{#                                                                        )#}
+{#                                                                );#}
+{#                                                                position: absolute;#}
+{#                                                                top: 50%;#}
+{#                                                                left: 50%;#}
+{#                                                                opacity: 1;#}
+{#                                                                animation: auto#}
+{#                                                                    ease 0s 1#}
+{#                                                                    normal none#}
+{#                                                                    running none;#}
+{#                                                                --scale-fill: 1;#}
+{#                                                            "#}
+{#                                                        >#}
+{#                                                            <img#}
+{#                                                                src="https://doselaka.my.canva.site/images/39545a0a4a99079c7527dbfc41ee4b46.svg"#}
+{#                                                                alt="Download Outline Icon"#}
+{#                                                                loading="lazy"#}
+{#                                                                style="#}
+{#                                                                    width: 100%;#}
+{#                                                                    height: 100%;#}
+{#                                                                    display: block;#}
+{#                                                                    object-fit: cover;#}
+{#                                                                    object-position: 50%#}
+{#                                                                        50%;#}
+{#                                                                    transform: translate(#}
+{#                                                                            -50%,#}
+{#                                                                            -50%#}
+{#                                                                        )#}
+{#                                                                        rotate(#}
+{#                                                                            -90deg#}
+{#                                                                        );#}
+{#                                                                "#}
+{#                                                            />#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                    <!--압력 입력 창 끝!-->
+                    <div id="N3vS46TZPFyr5KHB">
+                        <div
+                            id="ZrKaWsWNGdCpHjgb"
+                            style="display: grid; position: relative"
+                        >
+                            <div
+                                id="gDq6HEghcTEXkt4E"
+                                style="
+                                    display: grid;
+                                    position: relative;
+                                    grid-area: 2 / 2 / 3 / 3;
+                                "
+                            >
+                                <div id="QT9y1MKamjpH1MsC" style="z-index: 2">
+                                    <div
+                                        id="wImJ7abwUtFDNPLT"
+                                        style="
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            height: 100%;
+                                            transform: rotate(0deg);
+                                        "
+                                    >
+                                        <svg
+                                            id="ovYNEgZ8B7qHo94P"
+                                            viewBox="0 0 131.0163 31.4017"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="UrtttjkxSWoSUPpY"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="n1cfjgG97JBepIl0"
+                                                    style="
+                                                        clip-path: url(#rnTO5iOJix1YbrHW);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="rnTO5iOJix1YbrHW"
+                                                    >
+                                                        <path
+                                                            d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.62396885 C131.01629639,30.15809322 129.77264286,31.40174675 128.23851849,31.40174675 L2.7777779,31.40174675 C2.0410654,31.40174675 1.33452672,31.10908885 0.81359231,30.58815444 0.2926579,30.06722003 0,29.36068135 0,28.62396885 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="qoEc60tJEv6aoLVf"
+                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.62396885 C131.01629639,30.15809322 129.77264286,31.40174675 128.23851849,31.40174675 L2.7777779,31.40174675 C2.0410654,31.40174675 1.33452672,31.10908885 0.81359231,30.58815444 0.2926579,30.06722003 0,29.36068135 0,28.62396885 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        style="
+                                                            fill: #156cad;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="oqias198qBCXJlHZ"
+                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.62396885 C131.01629639,30.15809322 129.77264286,31.40174675 128.23851849,31.40174675 L2.7777779,31.40174675 C2.0410654,31.40174675 1.33452672,31.10908885 0.81359231,30.58815444 0.2926579,30.06722003 0,29.36068135 0,28.62396885 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g></svg
+                                        ><svg
+                                            id="Lt6wHtOBeY92LA0B"
+                                            viewBox="0 0 124.4444 36.7061"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="sQP0iw30uTcmAdYe"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="f9LcMGr8u37qrYxm"
+                                                    style="
+                                                        clip-path: url(#Z4AGrkgEnKQ45CWR);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="Z4AGrkgEnKQ45CWR"
+                                                    >
+                                                        <path
+                                                            d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.06768901 C124.44444275,35.52486028 123.26317204,36.70613098 121.80600078,36.70613098 L2.63844197,36.70613098 C1.1812707,36.70613098 0,35.52486027 0,34.06768901 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="kPWjHqUoVkwgzopm"
+                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.06768901 C124.44444275,35.52486028 123.26317204,36.70613098 121.80600078,36.70613098 L2.63844197,36.70613098 C1.1812707,36.70613098 0,35.52486027 0,34.06768901 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        style="
+                                                            fill: #156cad;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="vibdeXXXs6fkQHyS"
+                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.06768901 C124.44444275,35.52486028 123.26317204,36.70613098 121.80600078,36.70613098 L2.63844197,36.70613098 C1.1812707,36.70613098 0,35.52486027 0,34.06768901 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g></svg
+                                        ><svg
+                                            id="ge84pUYc8CuVzfS1"
+                                            viewBox="0 0 95.2778 31.8833"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="aazwQjiaKwyUCMKs"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="uz8JI0f0lnNpw4vE"
+                                                    style="
+                                                        clip-path: url(#XB5KRBbfuzyHW21e);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="XB5KRBbfuzyHW21e"
+                                                    >
+                                                        <path
+                                                            d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.86321385 C95.27777863,30.39896663 95.06495166,30.91277637 94.68611724,31.29161079 94.30728282,31.67044521 93.79347308,31.88327217 93.2577203,31.88327217 L2.02005832,31.88327217 C1.48430555,31.88327217 0.97049581,31.67044521 0.59166138,31.29161079 0.21282696,30.91277637 0,30.39896663 0,29.86321385 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="p4wLCW02e32G3DfB"
+                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.86321385 C95.27777863,30.39896663 95.06495166,30.91277637 94.68611724,31.29161079 94.30728282,31.67044521 93.79347308,31.88327217 93.2577203,31.88327217 L2.02005832,31.88327217 C1.48430555,31.88327217 0.97049581,31.67044521 0.59166138,31.29161079 0.21282696,30.91277637 0,30.39896663 0,29.86321385 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        style="
+                                                            fill: #156cad;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="gcEm5TyMdzPFaXGO"
+                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.86321385 C95.27777863,30.39896663 95.06495166,30.91277637 94.68611724,31.29161079 94.30728282,31.67044521 93.79347308,31.88327217 93.2577203,31.88327217 L2.02005832,31.88327217 C1.48430555,31.88327217 0.97049581,31.67044521 0.59166138,31.29161079 0.21282696,30.91277637 0,30.39896663 0,29.86321385 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div
+                                    id="qlulLUQ3dS5duJHr"
+                                    style="
+                                        display: grid;
+                                        position: relative;
+                                        grid-area: 3 / 3 / 4 / 4;
+                                    "
+                                >
+                                    <div
+                                        id="ljaX2W08VhaxoJkt"
+                                        style="z-index: 3"
+                                    >
+                                        <div
+                                            id="xwA0NwrXQU2XZKLm"
+                                            style="
+                                                box-sizing: border-box;
+                                                width: 100%;
+                                                height: 100%;
+                                                transform: rotate(0deg);
+                                            "
+                                        >
+                                            <div
+                                                id="jLBNwTt3eS3n06FX"
+                                                style="
+                                                    opacity: 1;
+                                                    display: flex;
+                                                    box-sizing: border-box;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                "
+                                            >
+                                                <p
+                                                    id="qNpI4tOA6HWCoJ2B"
+                                                    style="
+                                                        color: #fefefe;
+                                                        direction: ltr;
+                                                        font-family: YAFdJjbTu24-1;
+                                                        margin-left: 0em;
+                                                        line-height: 1.17187683em;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 0.032em;
+                                                    "
+                                                >
+                                                    <span
+                                                        id="iWcBTbOKsJTb0SD8"
+                                                        style="color: #fefefe; font-weight: 600"
+                                                        >제조 (온도​ x 압력) 입력 </span
+                                                    ><br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        id="TNMMFVmHVXXCqJHQ"
+                                        style="z-index: 20"
+                                    >
+                                        <div
+                                            id="UFQakqHTIynrz55U"
+                                            style="
+                                                padding-top: 100%;
+                                                transform: rotate(0deg);
+                                            "
+                                        >
+                                            <div
+                                                id="Tu2yBAXtXa1c1I01"
+                                                style="
+                                                    position: absolute;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                "
+                                            >
+                                                <div
+                                                    id="ZK5OaD0cE3G3xd3N"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="slzmDIAxsFHqlCXB"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="wbtpc4r1zC7h6EIY"
+                                                            class="scale_rotated_fill_v2"
+                                                            data-aspect-ratio="1"
+                                                            style="
+                                                                width: calc(
+                                                                    100% *
+                                                                        max(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                height: calc(
+                                                                    100% /
+                                                                        min(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                opacity: 1;
+                                                                animation: auto
+                                                                    ease 0s 1
+                                                                    normal none
+                                                                    running none;
+                                                                --scale-fill: 1;
+                                                            "
+                                                        >
+                                                            <img
+                                                                src="https://doselaka.my.canva.site/images/39545a0a4a99079c7527dbfc41ee4b46.svg"
+                                                                alt="Download Outline Icon"
+                                                                loading="lazy"
+                                                                style="
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    display: block;
+                                                                    object-fit: cover;
+                                                                    object-position: 50%
+                                                                        50%;
+                                                                    transform: translate(
+                                                                            -50%,
+                                                                            -50%
+                                                                        )
+                                                                        rotate(
+                                                                            -90deg
+                                                                        );
+                                                                "
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Omo5CZrdRIqsPjmb">
+                        <div
+                            id="xWNNOctOttzGYfsy"
+                            style="display: grid; position: relative"
+                        >
+                            <div
+                                id="XhVgKlfpxCRwEsMG"
+                                style="
+                                    display: grid;
+                                    position: relative;
+                                    grid-area: 2 / 2 / 3 / 3;
+                                "
+                            >
+                                <div id="L26kYXxmCS9JWB7D" style="z-index: 11">
+                                    <div
+                                        id="uXU4nwcBGjg6KP4n"
+                                        style="
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            height: 100%;
+                                            transform: rotate(0deg);
+                                        "
+                                    >
+                                        <svg
+                                            id="z5YMSwxmT6IUajK6"
+                                            viewBox="0 0 131.0163 31.4017"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="dPYmMuH26n5ThsCi"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="dLnVkUJ6oJCvTiXI"
+                                                    style="
+                                                        clip-path: url(#QSOIMIf0fMhDMXS4);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="QSOIMIf0fMhDMXS4"
+                                                    >
+                                                        <path
+                                                            d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.62396885 C131.01629639,30.15809322 129.77264286,31.40174675 128.23851849,31.40174675 L2.7777779,31.40174675 C2.0410654,31.40174675 1.33452672,31.10908885 0.81359231,30.58815444 0.2926579,30.06722003 0,29.36068135 0,28.62396885 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="PhBglS7fEcaGlKca"
+                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.62396885 C131.01629639,30.15809322 129.77264286,31.40174675 128.23851849,31.40174675 L2.7777779,31.40174675 C2.0410654,31.40174675 1.33452672,31.10908885 0.81359231,30.58815444 0.2926579,30.06722003 0,29.36068135 0,28.62396885 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        style="
+                                                            fill: #156cad;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="rBJaDePeJWsu4wCx"
+                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.62396885 C131.01629639,30.15809322 129.77264286,31.40174675 128.23851849,31.40174675 L2.7777779,31.40174675 C2.0410654,31.40174675 1.33452672,31.10908885 0.81359231,30.58815444 0.2926579,30.06722003 0,29.36068135 0,28.62396885 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g></svg
+                                        ><svg
+                                            id="FUulOpO4fCxw9iM7"
+                                            viewBox="0 0 124.4444 36.7061"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="TtGK0PTJs9FKXjfc"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="G6nZVihqRc48KHAx"
+                                                    style="
+                                                        clip-path: url(#vVww14V17HHEeR88);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="vVww14V17HHEeR88"
+                                                    >
+                                                        <path
+                                                            d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.06768901 C124.44444275,35.52486028 123.26317204,36.70613098 121.80600078,36.70613098 L2.63844197,36.70613098 C1.1812707,36.70613098 0,35.52486027 0,34.06768901 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="Izw0Roi0cWL1E0wE"
+                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.06768901 C124.44444275,35.52486028 123.26317204,36.70613098 121.80600078,36.70613098 L2.63844197,36.70613098 C1.1812707,36.70613098 0,35.52486027 0,34.06768901 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        style="
+                                                            fill: #156cad;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="KxLscXvyvYM2i55Z"
+                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.06768901 C124.44444275,35.52486028 123.26317204,36.70613098 121.80600078,36.70613098 L2.63844197,36.70613098 C1.1812707,36.70613098 0,35.52486027 0,34.06768901 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g></svg
+                                        ><svg
+                                            id="DoDWgI1OxzEE3MAI"
+                                            viewBox="0 0 95.2778 31.8833"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="b3hiYs3alCNm7cz0"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="JskkMjizJaslKty6"
+                                                    style="
+                                                        clip-path: url(#wTYbFWc2p9krJxdt);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="wTYbFWc2p9krJxdt"
+                                                    >
+                                                        <path
+                                                            d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.86321385 C95.27777863,30.39896663 95.06495166,30.91277637 94.68611724,31.29161079 94.30728282,31.67044521 93.79347308,31.88327217 93.2577203,31.88327217 L2.02005832,31.88327217 C1.48430555,31.88327217 0.97049581,31.67044521 0.59166138,31.29161079 0.21282696,30.91277637 0,30.39896663 0,29.86321385 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="d6MOzkm8vMg2Swz1"
+                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.86321385 C95.27777863,30.39896663 95.06495166,30.91277637 94.68611724,31.29161079 94.30728282,31.67044521 93.79347308,31.88327217 93.2577203,31.88327217 L2.02005832,31.88327217 C1.48430555,31.88327217 0.97049581,31.67044521 0.59166138,31.29161079 0.21282696,30.91277637 0,30.39896663 0,29.86321385 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        style="
+                                                            fill: #156cad;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="wyfCD18rgnwQEvz4"
+                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.86321385 C95.27777863,30.39896663 95.06495166,30.91277637 94.68611724,31.29161079 94.30728282,31.67044521 93.79347308,31.88327217 93.2577203,31.88327217 L2.02005832,31.88327217 C1.48430555,31.88327217 0.97049581,31.67044521 0.59166138,31.29161079 0.21282696,30.91277637 0,30.39896663 0,29.86321385 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div
+                                    id="TC2fdMfJvRxoY1AD"
+                                    style="
+                                        display: grid;
+                                        position: relative;
+                                        grid-area: 3 / 3 / 4 / 4;
+                                    "
+                                >
+                                    <div
+                                        id="Z8drL63RiimLEjuT"
+                                        style="z-index: 12"
+                                    >
+                                        <div
+                                            id="bsJ3HKyiUCkpDoZT"
+                                            style="
+                                                box-sizing: border-box;
+                                                width: 100%;
+                                                height: 100%;
+                                                transform: rotate(0deg);
+                                            "
+                                        >
+                                            <div
+                                                id="HoodGCz0dX3z6hi5"
+                                                style="
+                                                    opacity: 1;
+                                                    display: flex;
+                                                    box-sizing: border-box;
+                                                    flex-direction: column;
+                                                    justify-content: center;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                "
+                                            >
+                                                <p
+                                                    id="Kfh4Eojl8uDn3fjc"
+                                                    style="
+                                                        color: #fefefe;
+                                                        direction: ltr;
+                                                        font-family: YAFdJjbTu24-1;
+                                                        margin-left: 0em;
+                                                        line-height: 1.17187683em;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 0.032em;
+                                                    "
+                                                >
+                                                    <span
+                                                        id="w56pxOm1ImWbXhGc"
+                                                        style="color: #fefefe; font-weight: 600"
+                                                        >재료​ 변환 지표 입력 </span
+                                                    ><br />
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        id="DIrjEPUbL4meVbgz"
+                                        style="z-index: 22"
+                                    >
+                                        <div
+                                            id="c06DIDyxHnfYzheG"
+                                            style="
+                                                padding-top: 100%;
+                                                transform: rotate(0deg);
+                                            "
+                                        >
+                                            <div
+                                                id="CBOadsbxOzodvEgn"
+                                                style="
+                                                    position: absolute;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                "
+                                            >
+                                                <div
+                                                    id="RPmKwyXdIW2ObAB0"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="gpgzhueugy5bRBnG"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="tFByPUvCv9KZNNj8"
+                                                            class="scale_rotated_fill_v2"
+                                                            data-aspect-ratio="1"
+                                                            style="
+                                                                width: calc(
+                                                                    100% *
+                                                                        max(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                height: calc(
+                                                                    100% /
+                                                                        min(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                opacity: 1;
+                                                                animation: auto
+                                                                    ease 0s 1
+                                                                    normal none
+                                                                    running none;
+                                                                --scale-fill: 1;
+                                                            "
+                                                        >
+                                                            <img
+                                                                src="https://doselaka.my.canva.site/images/39545a0a4a99079c7527dbfc41ee4b46.svg"
+                                                                alt="Download Outline Icon"
+                                                                loading="lazy"
+                                                                style="
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    display: block;
+                                                                    object-fit: cover;
+                                                                    object-position: 50%
+                                                                        50%;
+                                                                    transform: translate(
+                                                                            -50%,
+                                                                            -50%
+                                                                        )
+                                                                        rotate(
+                                                                            -90deg
+                                                                        );
+                                                                "
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--재료 융합 지표 !--->
+{#                    <div id="N6Mzj47iDBhSzzTV">#}
+{#                        <div#}
+{#                            id="fx9x1Mcx8wcPbGrB"#}
+{#                            style="display: grid; position: relative"#}
+{#                        >#}
+{#                            <div#}
+{#                                id="si4fjzlFX6xSqQMZ"#}
+{#                                style="#}
+{#                                    display: grid;#}
+{#                                    position: relative;#}
+{#                                    grid-area: 2 / 2 / 3 / 3;#}
+{#                                "#}
+{#                            >#}
+{#                                <div id="KaD3jRDxfVMjqCBB" style="z-index: 8">#}
+{#                                    <div#}
+{#                                        id="KcIFOoTLPMfdcsts"#}
+{#                                        style="#}
+{#                                            box-sizing: border-box;#}
+{#                                            width: 100%;#}
+{#                                            height: 100%;#}
+{#                                            transform: rotate(0deg);#}
+{#                                        "#}
+{#                                    >#}
+{#                                        <svg#}
+{#                                            id="W4tERDJQglDOqAlG"#}
+{#                                            viewBox="0 0 131.0163 31.4203"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="kDDW1gVyQfovwSZi"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="UvZp9JeOIGGhstv9"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#RqJV0Pg1JhzLaSka);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="RqJV0Pg1JhzLaSka"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.64251018 C131.01629639,29.37922269 130.72363849,30.08576137 130.20270408,30.60669578 129.68176967,31.12763019 128.97523099,31.42028809 128.23851849,31.42028809 L2.7777779,31.42028809 C2.0410654,31.42028809 1.33452672,31.12763018 0.81359231,30.60669577 0.2926579,30.08576137 0,29.37922269 0,28.64251018 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="IwW9qGDx1ywoyLH3"#}
+{#                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.64251018 C131.01629639,29.37922269 130.72363849,30.08576137 130.20270408,30.60669578 129.68176967,31.12763019 128.97523099,31.42028809 128.23851849,31.42028809 L2.7777779,31.42028809 C2.0410654,31.42028809 1.33452672,31.12763018 0.81359231,30.60669577 0.2926579,30.08576137 0,29.37922269 0,28.64251018 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="SCisdSG4SjdJ0TZh"#}
+{#                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,28.64251018 C131.01629639,29.37922269 130.72363849,30.08576137 130.20270408,30.60669578 129.68176967,31.12763019 128.97523099,31.42028809 128.23851849,31.42028809 L2.7777779,31.42028809 C2.0410654,31.42028809 1.33452672,31.12763018 0.81359231,30.60669577 0.2926579,30.08576137 0,29.37922269 0,28.64251018 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g></svg#}
+{#                                        ><svg#}
+{#                                            id="rlqFuhgWoCHZPGyR"#}
+{#                                            viewBox="0 0 124.4444 36.7234"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="OzIGmMQutvx2tCjc"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="o8VtTRcDHgZVkyuX"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#GOKKCeE1N8S4Cxvw);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="GOKKCeE1N8S4Cxvw"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.08495052 C124.44444275,35.54212178 123.26317204,36.72339249 121.80600078,36.72339249 L2.63844197,36.72339249 C1.18127071,36.72339248 0,35.54212178 0,34.08495052 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="gPCX2l3rY7bS0QXe"#}
+{#                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.08495052 C124.44444275,35.54212178 123.26317204,36.72339249 121.80600078,36.72339249 L2.63844197,36.72339249 C1.18127071,36.72339248 0,35.54212178 0,34.08495052 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="hHA1nRxlJR4Ut1Td"#}
+{#                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,34.08495052 C124.44444275,35.54212178 123.26317204,36.72339249 121.80600078,36.72339249 L2.63844197,36.72339249 C1.18127071,36.72339248 0,35.54212178 0,34.08495052 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g></svg#}
+{#                                        ><svg#}
+{#                                            id="dUxw6cwuL0UMWA0s"#}
+{#                                            viewBox="0 0 95.2778 31.896"#}
+{#                                            preserveAspectRatio="none"#}
+{#                                            style="#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                opacity: 1;#}
+{#                                                overflow: hidden;#}
+{#                                                position: absolute;#}
+{#                                                top: 0%;#}
+{#                                                left: 0%;#}
+{#                                                background: url('data:image/png;base64,');#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <g#}
+{#                                                id="pz4v2UWwIAzdaWmG"#}
+{#                                                style="transform: scale(1, 1)"#}
+{#                                            >#}
+{#                                                <g#}
+{#                                                    id="mF4yryN3wNsLdT0M"#}
+{#                                                    style="#}
+{#                                                        clip-path: url(#aHTb73QlfKp1rkoh);#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <clipPath#}
+{#                                                        id="aHTb73QlfKp1rkoh"#}
+{#                                                    >#}
+{#                                                        <path#}
+{#                                                            d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.87594349 C95.27777863,30.41169627 95.06495167,30.92550601 94.68611724,31.30434044 94.30728282,31.68317486 93.79347308,31.89600182 93.2577203,31.89600182 L2.02005832,31.89600182 C1.48430555,31.89600182 0.97049581,31.68317485 0.59166138,31.30434043 0.21282696,30.92550601 0,30.41169627 0,29.87594349 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        ></path>#}
+{#                                                    </clipPath>#}
+{#                                                    <path#}
+{#                                                        id="bvKXmPvp255dPvig"#}
+{#                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.87594349 C95.27777863,30.41169627 95.06495167,30.92550601 94.68611724,31.30434044 94.30728282,31.68317486 93.79347308,31.89600182 93.2577203,31.89600182 L2.02005832,31.89600182 C1.48430555,31.89600182 0.97049581,31.68317485 0.59166138,31.30434043 0.21282696,30.92550601 0,30.41169627 0,29.87594349 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: #156cad;#}
+{#                                                            opacity: 1;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                    <path#}
+{#                                                        id="NYIV69vJaC5UzKZ7"#}
+{#                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,29.87594349 C95.27777863,30.41169627 95.06495167,30.92550601 94.68611724,31.30434044 94.30728282,31.68317486 93.79347308,31.89600182 93.2577203,31.89600182 L2.02005832,31.89600182 C1.48430555,31.89600182 0.97049581,31.68317485 0.59166138,31.30434043 0.21282696,30.92550601 0,30.41169627 0,29.87594349 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"#}
+{#                                                        style="#}
+{#                                                            fill: none;#}
+{#                                                            stroke-linecap: butt;#}
+{#                                                            vector-effect: non-scaling-stroke;#}
+{#                                                            stroke: #004b84;#}
+{#                                                        "#}
+{#                                                    ></path>#}
+{#                                                </g>#}
+{#                                            </g>#}
+{#                                        </svg>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                                <div#}
+{#                                    id="P2mRmlXOpqYefORA"#}
+{#                                    style="#}
+{#                                        display: grid;#}
+{#                                        position: relative;#}
+{#                                        grid-area: 3 / 3 / 4 / 4;#}
+{#                                    "#}
+{#                                >#}
+{#                                    <div#}
+{#                                        id="oglLYvi8mDCChQf4"#}
+{#                                        style="z-index: 9"#}
+{#                                    >#}
+{#                                        <div#}
+{#                                            id="AikPa6iSehhnW1QP"#}
+{#                                            style="#}
+{#                                                box-sizing: border-box;#}
+{#                                                width: 100%;#}
+{#                                                height: 100%;#}
+{#                                                transform: rotate(0deg);#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <div#}
+{#                                                id="iflcbmfo7kCULBzy"#}
+{#                                                style="#}
+{#                                                    opacity: 1;#}
+{#                                                    display: flex;#}
+{#                                                    box-sizing: border-box;#}
+{#                                                    flex-direction: column;#}
+{#                                                    justify-content: center;#}
+{#                                                    width: 100%;#}
+{#                                                    height: 100%;#}
+{#                                                "#}
+{#                                            >#}
+{#                                                <p#}
+{#                                                    id="T9KE7SEvfuK5iCif"#}
+{#                                                    style="#}
+{#                                                        color: #fefefe;#}
+{#                                                        direction: ltr;#}
+{#                                                        font-family: YAFdJjbTu24-1;#}
+{#                                                        margin-left: 0em;#}
+{#                                                        line-height: 1.17187683em;#}
+{#                                                        text-transform: uppercase;#}
+{#                                                        letter-spacing: 0.032em;#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <span#}
+{#                                                        id="ZGnpy3D4jyEXNesD"#}
+{#                                                        style="#}
+{#                                                            color: #fefefe;#}
+{#                                                            font-weight: 600;#}
+{#                                                        "#}
+{#                                                        >재료 변환 농도 입력 </span#}
+{#                                                    ><br />#}
+{#                                                </p>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                    <div#}
+{#                                        id="H5t9mBvpH7t2240l"#}
+{#                                        style="z-index: 21"#}
+{#                                    >#}
+{#                                        <div#}
+{#                                            id="bMVJzXWjzrHVN3DD"#}
+{#                                            style="#}
+{#                                                padding-top: 100%;#}
+{#                                                transform: rotate(0deg);#}
+{#                                            "#}
+{#                                        >#}
+{#                                            <div#}
+{#                                                id="TXMj2d3ZO3Q4QVmq"#}
+{#                                                style="#}
+{#                                                    position: absolute;#}
+{#                                                    top: 0px;#}
+{#                                                    left: 0px;#}
+{#                                                    width: 100%;#}
+{#                                                    height: 100%;#}
+{#                                                "#}
+{#                                            >#}
+{#                                                <div#}
+{#                                                    id="i6nzxGOozrq8ACgS"#}
+{#                                                    style="#}
+{#                                                        width: 100%;#}
+{#                                                        height: 100%;#}
+{#                                                        opacity: 1;#}
+{#                                                    "#}
+{#                                                >#}
+{#                                                    <div#}
+{#                                                        id="UQO4nQlVTRWI4sVm"#}
+{#                                                        style="#}
+{#                                                            transform: scale(#}
+{#                                                                1,#}
+{#                                                                1#}
+{#                                                            );#}
+{#                                                            width: 100%;#}
+{#                                                            height: 100%;#}
+{#                                                            overflow: hidden;#}
+{#                                                            position: relative;#}
+{#                                                        "#}
+{#                                                    >#}
+{#                                                        <div#}
+{#                                                            id="kiytyqGVuXeGg87e"#}
+{#                                                            class="scale_rotated_fill_v2"#}
+{#                                                            data-aspect-ratio="1"#}
+{#                                                            style="#}
+{#                                                                width: calc(#}
+{#                                                                    100% *#}
+{#                                                                        max(#}
+{#                                                                            1,#}
+{#                                                                            var(#}
+{#                                                                                --scale-fill,#}
+{#                                                                                1#}
+{#                                                                            )#}
+{#                                                                        )#}
+{#                                                                );#}
+{#                                                                height: calc(#}
+{#                                                                    100% /#}
+{#                                                                        min(#}
+{#                                                                            1,#}
+{#                                                                            var(#}
+{#                                                                                --scale-fill,#}
+{#                                                                                1#}
+{#                                                                            )#}
+{#                                                                        )#}
+{#                                                                );#}
+{#                                                                position: absolute;#}
+{#                                                                top: 50%;#}
+{#                                                                left: 50%;#}
+{#                                                                opacity: 1;#}
+{#                                                                animation: auto#}
+{#                                                                    ease 0s 1#}
+{#                                                                    normal none#}
+{#                                                                    running none;#}
+{#                                                                --scale-fill: 1;#}
+{#                                                            "#}
+{#                                                        >#}
+{#                                                            <img#}
+{#                                                                src="https://doselaka.my.canva.site/images/39545a0a4a99079c7527dbfc41ee4b46.svg"#}
+{#                                                                alt="Download Outline Icon"#}
+{#                                                                loading="lazy"#}
+{#                                                                style="#}
+{#                                                                    width: 100%;#}
+{#                                                                    height: 100%;#}
+{#                                                                    display: block;#}
+{#                                                                    object-fit: cover;#}
+{#                                                                    object-position: 50%#}
+{#                                                                        50%;#}
+{#                                                                    transform: translate(#}
+{#                                                                            -50%,#}
+{#                                                                            -50%#}
+{#                                                                        )#}
+{#                                                                        rotate(#}
+{#                                                                            -90deg#}
+{#                                                                        );#}
+{#                                                                "#}
+{#                                                            />#}
+{#                                                        </div>#}
+{#                                                    </div>#}
+{#                                                </div>#}
+{#                                            </div>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+                    <!--재료 융합 지표 끝!-->
+
+                    <!--결과 버튼-->
+                    <div id="JakEMneJVagseDzO">
+                       
+                        <button
+                            id="OPlVAyLMAM7pM0c9"
+                            style="display: grid;
+                            position: relative;
+                            background-color: #38b6ff;
+                            border-radius: 15px;
+                            cursor: pointer;"
+                            type="submit"
+                        >
+                            <div
+                                id="b4b5ReQOcjJ8alF0"
+                                style="
+                                    display: grid;
+                                    position: relative;
+                                    grid-area: 2 / 2 / 3 / 3;
+                                "
+                            >
+                                <div id="hb6xEuutZG16UY2A" style="z-index: 17">
+                                    <div
+                                        id="nHUZcVHktTw2XyCC"
+                                        style="
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            height: 100%;
+                                            transform: rotate(0deg);
+                                        "
+                                    >
+                                        <!-- <svg
+                                            id="Qw8s2Q1ZEK34Ya7l"
+                                            viewBox="0 0 131.0163 23.3907"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        > -->
+                                            <g
+                                                id="F5jvjOtfNgTOuowA"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="J1tBcZy5It4X9x3J"
+                                                    style="
+                                                        clip-path: url(#UQ6OnVEDhvwiydQ7);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="UQ6OnVEDhvwiydQ7"
+                                                    >
+                                                        <path
+                                                            d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,20.61292911 C131.01629639,21.34964162 130.72363849,22.0561803 130.20270408,22.57711471 129.68176967,23.09804912 128.97523099,23.39070702 128.23851849,23.39070702 L2.7777779,23.39070702 C2.0410654,23.39070702 1.33452672,23.09804911 0.81359231,22.5771147 0.2926579,22.0561803 0,21.34964162 0,20.61292911 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="W3AB92p5rxWjzcBI"
+                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,20.61292911 C131.01629639,21.34964162 130.72363849,22.0561803 130.20270408,22.57711471 129.68176967,23.09804912 128.97523099,23.39070702 128.23851849,23.39070702 L2.7777779,23.39070702 C2.0410654,23.39070702 1.33452672,23.09804911 0.81359231,22.5771147 0.2926579,22.0561803 0,21.34964162 0,20.61292911 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        style="
+                                                            fill: #38b6ff;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="lJodZWm3M1yn8yoj"
+                                                        d="M2.7777779,0 L128.23851849,0 C128.97523099,0 129.68176967,0.2926579 130.20270408,0.81359231 130.72363849,1.33452672 131.01629639,2.04106539 131.01629639,2.7777779 L131.01629639,20.61292911 C131.01629639,21.34964162 130.72363849,22.0561803 130.20270408,22.57711471 129.68176967,23.09804912 128.97523099,23.39070702 128.23851849,23.39070702 L2.7777779,23.39070702 C2.0410654,23.39070702 1.33452672,23.09804911 0.81359231,22.5771147 0.2926579,22.0561803 0,21.34964162 0,20.61292911 L0,2.7777779 C0,2.0410654 0.2926579,1.33452672 0.81359231,0.81359231 1.33452672,0.2926579 2.0410654,0 2.7777779,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g></svg
+                                        ><svg
+                                            id="i1cF8k1nSWgRVRkm"
+                                            viewBox="0 0 124.4444 29.2481"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="ayLjxeyEMdYXUeGs"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="vMl8BAJvIgJ5xi7i"
+                                                    style="
+                                                        clip-path: url(#Ykl1ldbmONorbdxz);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="Ykl1ldbmONorbdxz"
+                                                    >
+                                                        <path
+                                                            d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,26.60963924 C124.44444275,28.0668105 123.26317204,29.24808121 121.80600078,29.24808121 L2.63844197,29.24808121 C1.18127071,29.24808121 0,28.0668105 0,26.60963924 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="kSBA7PXMnjoxbuWd"
+                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,26.60963924 C124.44444275,28.0668105 123.26317204,29.24808121 121.80600078,29.24808121 L2.63844197,29.24808121 C1.18127071,29.24808121 0,28.0668105 0,26.60963924 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        style="
+                                                            fill: #38b6ff;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="dIkqDxpNQJiXmLsx"
+                                                        d="M2.63844197,0 L121.80600078,0 C123.26317204,0 124.44444275,1.18127071 124.44444275,2.63844197 L124.44444275,26.60963924 C124.44444275,28.0668105 123.26317204,29.24808121 121.80600078,29.24808121 L2.63844197,29.24808121 C1.18127071,29.24808121 0,28.0668105 0,26.60963924 L0,2.63844197 C0,1.1812707 1.18127071,0 2.63844197,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g></svg
+                                        ><svg
+                                            id="temFARvOv6RDjwqF"
+                                            viewBox="0 0 95.2778 26.383"
+                                            preserveAspectRatio="none"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="ZAVjGHc1TQGRYiL9"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="AGssUJUzI06ObqXD"
+                                                    style="
+                                                        clip-path: url(#dOXprenUqN2ujoLV);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="dOXprenUqN2ujoLV"
+                                                    >
+                                                        <path
+                                                            d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,24.36290104 C95.27777863,24.89865382 95.06495167,25.41246356 94.68611724,25.79129799 94.30728282,26.17013241 93.79347308,26.38295937 93.2577203,26.38295937 L2.02005832,26.38295937 C1.48430555,26.38295937 0.97049581,26.1701324 0.59166138,25.79129798 0.21282696,25.41246356 0,24.89865382 0,24.36290104 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="TwTjxnDsyYjjUqVd"
+                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,24.36290104 C95.27777863,24.89865382 95.06495167,25.41246356 94.68611724,25.79129799 94.30728282,26.17013241 93.79347308,26.38295937 93.2577203,26.38295937 L2.02005832,26.38295937 C1.48430555,26.38295937 0.97049581,26.1701324 0.59166138,25.79129798 0.21282696,25.41246356 0,24.89865382 0,24.36290104 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        style="
+                                                            fill: #38b6ff;
+                                                            opacity: 1;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="MGaLtyhCg8EWH1XC"
+                                                        d="M2.02005832,0 L93.2577203,0 C93.79347308,0 94.30728282,0.21282696 94.68611724,0.59166138 95.06495167,0.9704958 95.27777863,1.48430554 95.27777863,2.02005832 L95.27777863,24.36290104 C95.27777863,24.89865382 95.06495167,25.41246356 94.68611724,25.79129799 94.30728282,26.17013241 93.79347308,26.38295937 93.2577203,26.38295937 L2.02005832,26.38295937 C1.48430555,26.38295937 0.97049581,26.1701324 0.59166138,25.79129798 0.21282696,25.41246356 0,24.89865382 0,24.36290104 L0,2.02005832 C0,1.48430555 0.21282696,0.97049581 0.59166138,0.59166138 0.9704958,0.21282696 1.48430554,0 2.02005832,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #004b84;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div id="ruiqfq5y8ogeGr6T" style="z-index: 18">
+                                    <div
+                                        id="nFe0HaF0SBQCQ1pH"
+                                        style="
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            height: 100%;
+                                            transform: rotate(0deg);
+                                        "
+                                    >
+                                        <div
+                                            id="K3o1mZbTVg9d8T9X"
+                                            style="
+                                                opacity: 1;
+                                                display: flex;
+                                                box-sizing: border-box;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                width: 100%;
+                                                height: 100%;
+                                            "
+                                        >
+                                            <p
+                                                id="kBDnIVlBPHbcEWdj"
+                                                style="
+                                                    color: #fefefe;
+                                                    direction: ltr;
+                                                    font-family: YAFdJjbTu24-1;
+                                                    margin-left: 0em;
+                                                    line-height: 1.17187683em;
+                                                    text-align: center;
+                                                    text-transform: uppercase;
+                                                    letter-spacing: 0.032em;
+                                                "
+                                            >
+                                                <span
+                                                    id="JEf6HQrS92mmuCde"
+                                                    style="color: #fefefe"
+                                                    >결과 확인 하기</span
+                                                ><br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <script
+                src="js/939898b427480d700449229ff00dbb8a6f9f77442b532f697866e6914ab8843a.js"
+                async=""
+                nonce=""
+            ></script>
+            <script
+                src="js/01c7ccc81a1289dedbdae34afe3477f60b4bd37c9b8a15eec37e59453e6d6fd3.js"
+                async=""
+                nonce=""
+            ></script>
+            <script
+                src="js/388fb330498371d4935abbff11d34d4c30842ca3c4a128cdd290d29db98acb41.js"
+                async=""
+                nonce=""
+            ></script>
+        </div>
+    </body>
+    <!-- 첫 번째 모달과 폼 -->
+<div id="confirm-modal-container">
+    <div id="confirm-modal"></div>
+    <section id="alertify-o1" class="alertify-o alertify-o-alert">
+        <article class="alertify-o-inner">
+                {% csrf_token %}
+                <input
+                    class="alertify-o-message"
+                    style="font-size: 15px; padding-top: 2px;"
+                    placeholder="제품에 해당하는 수치 입력."
+                    name="tem_x_press"
+                    type="number"
+                    step="any"
+                    required
+                >
+                <nav class="alertify-o-buttons">
+                    <button
+                        class="alertify-o-button alertify-o-button-ok"
+                        id="alertify-o-ok"
+                        type="submit"
+                    >
+                        확인
+                    </button>
+                </nav>
+        </article>
+    </section>
+</div>
+
+<!-- 두 번째 모달과 폼 -->
+<div id="confirm-modal-container1">
+    <div id="confirm-modal"></div>
+    <section id="alertify-o2" class="alertify-o alertify-o-alert">
+        <article class="alertify-o-inner">
+                <input
+                    class="alertify-o-message"
+                    style="font-size: 15px; padding-top: 2px;"
+                    placeholder="제품제조 변환 수치 입력."
+                    name="conversion_index"
+                    type="number"
+                    step="any"
+                    required
+                >
+                <nav class="alertify-o-buttons">
+                    <button
+                        class="alertify-o-button alertify-o-button-ok"
+                        id="alertify-o-ok1"
+                        type="submit"
+                    >
+                        확인
+                    </button>
+                </nav>
+        </article>
+    </section>
+</div>
+    </form>
+{% endblock %}
+
+{% block js %}
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function(event) {
+        const temXPress = document.querySelector('input[name="tem_x_press"]').value;
+
+        // 입력값이 비어 있거나 숫자가 아닌 경우 처리
+        if (temXPress.trim() === '' || isNaN(temXPress)) {
+            alert('Temperature x Pressure 값에 유효한 숫자를 입력해주세요.');
+            event.preventDefault();  // 폼 제출 방지
+        }
+    });
+});
+</script>
+    <script>
+
+    </script>
+    <script src="{% static 'ai/js/manufact.js' %}"></script>
+{% endblock %}
+

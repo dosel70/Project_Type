@@ -1,0 +1,1652 @@
+{% extends 'login/base.html' %}
+{% load static %}
+{% block static %}
+    <link rel="stylesheet" href="{% static 'member/css/register.css' %}" />
+{% endblock %}        
+    {% block title %}회원가입 페이지{% endblock %}
+
+    {% block content %}
+        <form id=registerForm action="{% url 'member:register' %}" method="post" enctype="multipart/form-data" name="register">
+        <div id="root">
+            <a id="page-1" aria-hidden="true" style="visibility: hidden"></a>
+            <section
+                id="ymWkPZexpvs5s1aB"
+                style="
+                    position: relative;
+                    overflow: hidden;
+                    display: grid;
+                    align-items: center;
+                    grid-template-columns: auto 100rem auto;
+                    z-index: 0;
+                "
+            >
+{#                <form action="{% url 'member:register' %}" method="post" enctype="multipart/form-data" name="register">#}
+                    {% csrf_token %}
+                    <div
+                    id="g1T9EjrFlMcSbXU1"
+                    style="
+                        grid-area: 1 / 1 / 2 / 4;
+                        display: grid;
+                        position: absolute;
+                        min-height: 100%;
+                        min-width: 100%;
+                    "
+                >
+                    <div id="Y25vgaJdTOoxfcss" style="z-index: 0">
+                        <div
+                            id="m6MMK7FMHmjtTTsT"
+                            style="
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 100%;
+                                transform: rotate(0deg);
+                            "
+                        >
+                            <div
+                                id="WjwXyHMUJbobDyro"
+                                style="width: 100%; height: 100%; opacity: 1"
+                            >
+                                <div
+                                    id="hnjY9CSBRdwjTY7z"
+                                    style="
+                                        background-color: #156cad;
+                                        opacity: 1;
+                                        transform: scale(1, 1);
+                                        width: 100%;
+                                        height: 100%;
+                                        overflow: hidden;
+                                        position: relative;
+                                    "
+                                ></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{#                </form>#}
+                <div
+                    id="b1R5rua5zHCXZyQ2"
+                    style="
+                        display: grid;
+                        position: relative;
+                        grid-area: 1 / 2 / 2 / 3;
+                    "
+                >
+                    <div id="P3UtP4JLJd1IjGMr">
+                        <div
+                            id="JupOBCyJjFMPGbDP"
+                            style="display: grid; position: relative"
+                        >
+                            <div id="p3ZHizPdvAEISeWe" style="z-index: 8">
+                                <div
+                                    id="mLh7aFDMe9XnrT01"
+                                    style="
+                                        box-sizing: border-box;
+                                        width: 100%;
+                                        height: 100%;
+                                        transform: rotate(0deg);
+                                    "
+                                >
+                                    <div
+                                        id="L98KL47KGPRcwql3"
+                                        style="
+                                            opacity: 1;
+                                            display: flex;
+                                            box-sizing: border-box;
+                                            flex-direction: column;
+                                            justify-content: flex-start;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <p
+                                            id="PtGq1lneOSDshKyo"
+                                            style="
+                                                color: #ffffff;
+                                                font-family: YAFdJvl8raw-0;
+                                                line-height: 1.38158077em;
+                                                text-align: center;
+                                            "
+                                        >
+                                            <span
+                                                id="M3oXGsSLpnvFKhFw"
+                                                style="color: #ffffff"
+                                                >회원​가입</span
+                                            ><br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="U5aXjx6GXyJIKHm7" style="z-index: 9">
+                                <div
+                                    id="Y8VDKB58qTQzcKb8"
+                                    style="
+                                        box-sizing: border-box;
+                                        width: 100%;
+                                        height: 100%;
+                                        transform: rotate(0deg);
+                                    "
+                                >
+                                    <div
+                                        id="IycOKmXtfXQc8Pft"
+                                        style="
+                                            opacity: 1;
+                                            display: flex;
+                                            box-sizing: border-box;
+                                            flex-direction: column;
+                                            justify-content: flex-start;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <p
+                                            id="WyMTzDZ7zBODHYVO"
+                                            style="
+                                                color: #ffffff;
+                                                font-family: YAFdJvl8raw-0;
+                                                line-height: 1.35937712em;
+                                                text-align: center;
+                                                text-transform: uppercase;
+                                            "
+                                        >
+                                            <span
+                                                id="EI5661lHzGaL7UMm"
+                                                style="color: #ffffff"
+                                                >Re​gister</span
+                                            ><br />
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="GqTRCDWyIPceayCV" style="z-index: 10">
+                        <div
+                            id="LgC5rb64aWkpWArK"
+                            style="
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 100%;
+                                transform: rotate(0deg);
+                            "
+                        >
+                            <div
+                                id="DgRgXgL5J46s4Dnh"
+                                style="
+                                    opacity: 1;
+                                    display: flex;
+                                    box-sizing: border-box;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    width: 100%;
+                                    height: 100%;
+                                "
+                            >
+                                <p
+                                    id="JPT3wr5YJvDeiv3j"
+                                    style="
+                                        color: #ffffff;
+                                        font-family: YAEnS2G4JLg-0;
+                                        line-height: 1.28572347em;
+                                        text-align: center;
+                                        text-transform: none;
+                                        letter-spacing: 0em;
+                                    "
+                                >
+                                    <span
+                                        id="QGgUWTrZJvB96zo3"
+                                        style="color: #ffffff"
+                                        >정보 입력 </span
+                                    ><br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="K1HDSN9Zt7nv2P7F" style="z-index: 2">
+                        <div
+                            id="feu14TgRU70BLBEG"
+                            style="
+                                padding-top: 14.76997529%;
+                                transform: rotate(0deg);
+                            "
+                        >
+                            <input
+                                id="dNzxYjKuSVvCGT10"
+                                type="email"
+                                placeholder="이메일 입력"
+                                name="member_email"
+                                style="
+                                    position: absolute;
+                                    top: 0px;
+                                    left: 0px;
+                                    width: 98%;
+                                    height: 90%;
+                                    border-radius: 15px;
+                                    box-shadow: 0 0 0 3px #fff;
+                                    background-color: #156cad;
+                                    color: #fff;
+                                    font-size: 20px;
+                                "
+                            >
+                                <!-- <svg
+                                    id="QcHm63iR7kTwpwoI"
+                                    viewBox="0 0 81.5193 12.0404"
+                                    style="
+                                        width: 100%;
+                                        height: 100%;
+                                        opacity: 1;
+                                        overflow: hidden;
+                                        position: absolute;
+                                        top: 0%;
+                                        left: 0%;
+                                        background: url('data:image/png;base64,');
+                                    "
+                                > -->
+                                    <g
+                                        id="CkO49Gxt7enD6Jqi"
+                                        style="transform: scale(1, 1)"
+                                    >
+                                        <g
+                                            id="x5ENcTofz8Y0yZAJ"
+                                            style="
+                                                clip-path: url(#xoGHoDulTBilm5cm);
+                                            "
+                                        >
+                                            <clipPath id="xoGHoDulTBilm5cm">
+                                                <path
+                                                    d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                ></path>
+                                            </clipPath>
+                                            <path
+                                                id="rXeBqQe9zvCj0h3d"
+                                                d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                style="
+                                                    fill: none;
+                                                    stroke: transparent;
+                                                "
+                                            ></path>
+                                            <path
+                                                id="X7UBQxAptOXDWO0p"
+                                                d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                style="
+                                                    fill: none;
+                                                    stroke-linecap: butt;
+                                                    vector-effect: non-scaling-stroke;
+                                                    stroke: #ffffff;
+                                                "
+                                            ></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </input>
+                        </div>
+                    </div>
+                    <div id="VDLU9YV0ZWMYI1cC" style="z-index: 11">
+                        <div
+                            id="x6ZV9SSMceYQO1Rj"
+                            style="
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 100%;
+                                transform: rotate(0deg);
+                            "
+                        >
+                            <div
+                                id="t8rFklipVZyQe8CX"
+                                style="
+                                    opacity: 1;
+                                    display: flex;
+                                    box-sizing: border-box;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    width: 100%;
+                                    height: 100%;
+                                "
+                            >
+                                <p
+                                    id="Q7ntLF49E1VI5i2a"
+                                    style="
+                                        color: #ffffff;
+                                        font-family: YAEnS2G4JLg-0;
+                                        line-height: 1.2900129em;
+                                        text-align: center;
+                                        text-transform: none;
+                                        letter-spacing: 0em;
+                                    "
+                                >
+                                    <span
+                                        id="zhsZ7ebb0O64teWV"
+                                        style="color: #ffffff"
+                                        >E-Mail</span
+                                    ><br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="REUoN9khZVrrMsZ7">
+                        <div
+                            id="IBN7BJXjSVO0eHhh"
+                            style="display: grid; position: relative"
+                        >
+                            <div id="DkQOw3SClgfDwvrK" style="z-index: 1">
+                                <div
+                                    id="Zg70SNUKsn6ADPZE"
+                                    style="
+                                        padding-top: 68.9077707%;
+                                        transform: rotate(0deg);
+                                    "
+                                >
+                                    <div
+                                        id="YM3ndL09pjs4mZKS"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <svg
+                                            id="Bfdk62bv9pWkaxC1"
+                                            viewBox="0 0 165.32 113.9184"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        >
+                                            <g
+                                                id="WFR7DN9OTQBH0Mcv"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <path
+                                                    id="EaWkHrqiG7oh8gpq"
+                                                    d="M0,0 L165.32004784,0 L165.32004784,113.91835949 L0,113.91835949 Z"
+                                                    style="
+                                                        fill: none;
+                                                        stroke: transparent;
+                                                    "
+                                                ></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="DcqmnWvCBXHabjzw" style="z-index: 3">
+                                <div
+                                    id="OCXdo5Y3myFzUNMU"
+                                    style="
+                                        padding-top: 14.76997529%;
+                                        transform: rotate(0deg);
+                                    "
+                                >
+                                    <input
+                                        id="C5IiSn6osSmegaxE"
+                                        type="password"
+                                        class="pw1"
+                                        placeholder="비밀번호 입력"
+                                        name="member_password1"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            width: 98%;
+                                            height: 90%;
+                                            border-radius: 15px;
+                                            box-shadow: 0 0 0 3px #fff;
+                                            background-color: #156cad;
+                                            color: #fff;
+                                            font-size: 20px;
+                                        "
+                                        
+                                    >
+                                        <!-- <svg
+                                            id="yKw1Da2KOmpq3KCu"
+                                            viewBox="0 0 81.5193 12.0404"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        > -->
+                                            <g
+                                                id="zZbDoX9QWMOaP0fg"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="CijfNIGZ7VhY8B9s"
+                                                    style="
+                                                        clip-path: url(#cUv4HEcQMD7lycoR);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="cUv4HEcQMD7lycoR"
+                                                    >
+                                                        <path
+                                                            d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="oLJEIpZxbAdoik02"
+                                                        d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke: transparent;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="QkUOyqGisJeQ6ogx"
+                                                        d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #ffffff;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </input>
+                                </div>
+                            </div>
+                            <div id="GZ4fshEyudzmrM5P" style="z-index: 21">
+                                <div
+                                    id="pY9jA80Aqo1lA9pY"
+                                    style="
+                                        padding-top: 14.76997529%;
+                                        transform: rotate(0deg);
+                                    "
+                                >
+                                    <input
+                                        id="nSTvZ4YWcwflcw4T"
+                                        class="pw2"
+                                        type="password"
+                                        placeholder="2차 비밀번호 입력"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                            width: 98%;
+                                            height: 90%;
+                                            border-radius: 15px;
+                                            box-shadow: 0 0 0 3px #fff;
+                                            background-color: #156cad;
+                                            color: #fff;
+                                            font-size: 20px;
+                                        "
+                                        name="member_password2"
+                                    >
+                                        <!-- <svg
+                                            id="Z7XbMvEWxqMXnabM"
+                                            viewBox="0 0 81.5193 12.0404"
+                                            style="
+                                                width: 100%;
+                                                height: 100%;
+                                                opacity: 1;
+                                                overflow: hidden;
+                                                position: absolute;
+                                                top: 0%;
+                                                left: 0%;
+                                                background: url('data:image/png;base64,');
+                                            "
+                                        > -->
+                                            <g
+                                                id="Cbw9IoSEMiHOyqWl"
+                                                style="transform: scale(1, 1)"
+                                            >
+                                                <g
+                                                    id="PNhUCpot3UazO0xL"
+                                                    style="
+                                                        clip-path: url(#b8a8NceIFu5FbrON);
+                                                    "
+                                                >
+                                                    <clipPath
+                                                        id="b8a8NceIFu5FbrON"
+                                                    >
+                                                        <path
+                                                            d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                        ></path>
+                                                    </clipPath>
+                                                    <path
+                                                        id="yjYguYaf0YQhsfkm"
+                                                        d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke: transparent;
+                                                        "
+                                                    ></path>
+                                                    <path
+                                                        id="YWj5INAkzPuFdG25"
+                                                        d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.06507965 C81.51934814,10.58896377 81.31123599,11.09139097 80.94079397,11.46183298 80.57035195,11.832275 80.06792476,12.04038715 79.54404064,12.04038715 L1.9753075,12.04038715 C1.45142338,12.04038715 0.94899619,11.832275 0.57855417,11.46183298 0.20811216,11.09139097 0,10.58896377 0,10.06507965 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                        style="
+                                                            fill: none;
+                                                            stroke-linecap: butt;
+                                                            vector-effect: non-scaling-stroke;
+                                                            stroke: #ffffff;
+                                                        "
+                                                    ></path>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </input>
+                                </div>
+                            </div>
+                            <div
+                                id="NW89ptRHKPn5FYWJ"
+                                style="
+                                    display: grid;
+                                    position: relative;
+                                    grid-area: 7 / 5 / 8 / 8;
+                                "
+                            >
+                                <div
+                                    id="KGSZSDhc7mCK786M"
+                                    style="
+                                        display: grid;
+                                        position: relative;
+                                        grid-area: 2 / 2 / 3 / 3;
+                                    "
+                                >
+                                    <div
+                                        id="XnSfuAGqZHU8HwQl"
+                                        style="z-index: 5"
+                                    >
+                                        <div
+                                            id="IxAzbU6RIuckbKj8"
+                                            style="
+                                                padding-top: 15.1519479%;
+                                                transform: rotate(0deg);
+                                            "
+                                        >
+                                            <div
+                                                id="WJSpK8hNM2p4QWfL"
+                                                style="
+                                                    position: absolute;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    width: 100%;
+                                                    height: 100%;
+                                                "
+                                            >
+                                                <svg
+                                                    id="CuUTtBupwzrOvk3B"
+                                                    viewBox="0 0 81.5193 12.3518"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                        overflow: hidden;
+                                                        position: absolute;
+                                                        top: 0%;
+                                                        left: 0%;
+                                                        background: url('data:image/png;base64,');
+                                                    "
+                                                >
+                                                    <g
+                                                        id="tusXLZetF8nhgXVy"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                        "
+                                                    >
+                                                        <path
+                                                            id="Pmq7Y0l2bKwn0yaH"
+                                                            d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,10.37646195 C81.51934815,10.90034607 81.31123599,11.40277326 80.94079397,11.77321528 80.57035196,12.14365729 80.06792476,12.35176945 79.54404064,12.35176945 L1.9753075,12.35176945 C0.88437529,12.35176945 0,11.46739416 0,10.37646195 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                            style="
+                                                                fill: #38b6ff;
+                                                                opacity: 1;
+                                                            "
+                                                        ></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        id="mWbhOv1jZLir34al"
+                                        style="z-index: 6"
+                                    >
+                                        <div
+                                            id="DZ7UwdqXvE8tICQr"
+                                            style="
+                                                box-sizing: border-box;
+                                                width: 100%;
+                                                height: 100%;
+                                                transform: rotate(0deg);
+                                            "
+                                        >
+{#                                        <form class="SignRegister">#}
+                                            <button
+                                                id="nYIzqqXkOnjB5sXn"
+                                                style="
+                                                width: 100%;
+                                                height: 100%;
+                                                /* transform: rotate(0deg); */
+                                                overflow: hidden;
+                                                background-color: #38b6ff;
+                                                /* box-shadow: 0 0 0 1px #38b6ff; */
+                                                border-color: #38b6ff;
+                                                background-color: #38b6ff;
+                                                border-radius: 35px;
+                                                border: none;
+                                                cursor: pointer;
+                                                
+                                            "
+                                                type="submit"
+                                               
+                                            >
+                                                <p
+                                                    id="qwoUOWqTIqodr8l1"
+                                                    style="
+                                                        color: #ffffff;
+                                                        font-family: YAEnS2G4JLg-0;
+                                                        line-height: 2.291672em;
+                                                        text-align: center;
+                                                        text-transform: none;
+                                                        letter-spacing: 0em;
+                                                    "
+                                                >
+                                                    <span
+                                                        id="rMGKVF8LW4gxAveu"
+                                                        style="color: #ffffff"
+                                                        >회원​가입 완료</span
+                                                    ><br />
+                                                </p>
+                                            </button>
+{#                                        </form>#}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="i8fPdSxSKpV2Qfhi" style="z-index: 26">
+                        <div
+                            id="gen80aBYXGLln5jb"
+                            style="
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 100%;
+                                transform: rotate(0deg);
+                            "
+                        >
+                            <div
+                                id="PyxXRIgeCZqv7Xt2"
+                                style="
+                                    opacity: 1;
+                                    display: flex;
+                                    box-sizing: border-box;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    width: 100%;
+                                    height: 100%;
+                                "
+                            >
+                                <p
+                                    id="BEpq678ycGCqrYTy"
+                                    style="
+                                        color: #ffffff;
+                                        font-family: YAEnS2G4JLg-0;
+                                        line-height: 1.29167205em;
+                                        text-align: center;
+                                        text-transform: none;
+                                        letter-spacing: 0em;
+                                    "
+                                >
+                                    <span
+                                        id="Rk7UttMieJ5mqx1j"
+                                        style="color: #ffffff"
+                                        >1차 비밀번호</span
+                                    ><br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="Te2sDwh2x8kGHBhp">
+                        <div
+                            id="RcFOpOc6mxvNwAc1"
+                            style="display: grid; position: relative"
+                        >
+                            <div id="j9mPvdOEyptIAnfW" style="z-index: 20">
+                                <div
+                                    id="an3qqdDzOtdqIlFY"
+                                    style="padding-top: 160.40268456%"
+                                >
+                                    <div
+                                        id="Pp18uyunjPFNK7YI"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <div
+                                            class="animation_container"
+                                            style="width: 100%; height: 100%"
+                                        >
+                                            <div
+                                                class="animated"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    animation: 1562ms ease 100ms
+                                                            1 normal both
+                                                            running
+                                                            rise-LEFT-1725c034-e06f-444e-aa06-26f931c2451b,
+                                                        400ms linear 0s 1 normal
+                                                            both linear_fade;
+                                                "
+                                            >
+                                                <div
+                                                    id="GVNy72cpTuodZW90"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="ouvEaCylwbw8hqMl"
+                                                        class="video_container"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="QhRFi7ClWwcjk7Pz"
+                                                            style="
+                                                                width: calc(
+                                                                    100% *
+                                                                        max(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                height: calc(
+                                                                    100% /
+                                                                        min(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                opacity: 1;
+                                                                animation: auto
+                                                                    ease 0s 1
+                                                                    normal none
+                                                                    running none;
+                                                            "
+                                                        >
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="SZpBYiEnOq5ZU7TQ" style="z-index: 19">
+                                <div
+                                    id="EfZeVB6KWjs6AAC6"
+                                    style="padding-top: 61.59334126%"
+                                >
+                                    <div
+                                        id="xrhWlDC4kb7za9lm"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <div
+                                            class="animation_container"
+                                            style="width: 100%; height: 100%"
+                                        >
+                                            <div
+                                                class="animated"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    animation: 1562ms ease 100ms
+                                                            1 normal both
+                                                            running
+                                                            rise-LEFT-1a9fc5f0-4082-4a0c-a477-51490dde77f8,
+                                                        400ms linear 0s 1 normal
+                                                            both linear_fade;
+                                                "
+                                            >
+                                                <div
+                                                    id="h49tb2cf0Q5VygMQ"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="UqDJzjZJ522EHDxr"
+                                                        class="video_container"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="t07qnvMHNj7g4YoE"
+                                                            style="
+                                                                width: calc(
+                                                                    100% *
+                                                                        max(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                height: calc(
+                                                                    100% /
+                                                                        min(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                opacity: 1;
+                                                                animation: auto
+                                                                    ease 0s 1
+                                                                    normal none
+                                                                    running none;
+                                                            "
+                                                        >
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="svmoJrBeXMEcas9h" style="z-index: 22">
+                        <div
+                            id="nXBMQ1BltvzMAAVN"
+                            style="
+                                box-sizing: border-box;
+                                width: 100%;
+                                height: 100%;
+                                transform: rotate(0deg);
+                            "
+                        >
+                            <div
+                                id="gcDYDmD6BSZhyWwS"
+                                style="
+                                    opacity: 1;
+                                    display: flex;
+                                    box-sizing: border-box;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    width: 100%;
+                                    height: 100%;
+                                "
+                            >
+                                <p
+                                    id="rypqwqGohnYi1qZz"
+                                    style="
+                                        color: #ffffff;
+                                        font-family: YAEnS2G4JLg-0;
+                                        line-height: 1.29167205em;
+                                        text-align: center;
+                                        text-transform: none;
+                                        letter-spacing: 0em;
+                                    "
+                                >
+                                    <span
+                                        id="KDgykRcW95p9BqvF"
+                                        style="color: #ffffff"
+                                        >2차 비밀번호</span
+                                    ><br />
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+     
+                    <div id="gczZltQ6utOym24y">
+                        
+                        <button
+                            id="fGh9972hAjv40Zdh"
+                            style="display: grid;
+                                    position: relative;
+                                    background-color: #156CAD;
+                                    cursor: pointer;
+                                    overflow: hidden;
+                                    border: none"
+                            onclick=location.href={% url 'member:login' %}
+                        >
+                            <div
+                                id="DzjFELtubxrABtsz"
+                                style="
+                                    display: grid;
+                                    position: relative;
+                                    grid-area: 2 / 2 / 3 / 3;
+                                "
+                            >
+                                <div id="lQM9PC31d4Y5pN61" style="z-index: 24">
+                                    <div
+                                        id="EsI35h8kQpctnatb"
+                                        style="
+                                            padding-top: 13.62405745%;
+                                            transform: rotate(0deg);
+                                        "
+                                    >
+                                        <div
+                                            id="WVF3YtXHJdHIcqIp"
+                                            style="
+                                                position: absolute;
+                                                top: 0px;
+                                                left: 0px;
+                                                width: 100%;
+                                                height: 100%;
+                                            "
+                                        >
+                                            <svg
+                                                id="LV4HKPHHAd8oMAec"
+                                                viewBox="0 0 81.5193 11.1062"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    opacity: 1;
+                                                    overflow: hidden;
+                                                    position: absolute;
+                                                    top: 0%;
+                                                    left: 0%;
+                                                    background: url('data:image/png;base64,');
+                                                "
+                                            >
+                                                <g
+                                                    id="VcMnubcV8oE6jdz3"
+                                                    style="
+                                                        transform: scale(1, 1);
+                                                    "
+                                                >
+                                                    <g
+                                                        id="YL7sBnUAqn87Y4x7"
+                                                        style="
+                                                            clip-path: url(#kQgIJNIOA0hCpcjm);
+                                                        "
+                                                    >
+                                                        <clipPath
+                                                            id="kQgIJNIOA0hCpcjm"
+                                                        >
+                                                            <path
+                                                                d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,9.13093563 C81.51934814,9.65481975 81.31123599,10.15724695 80.94079397,10.52768896 80.57035195,10.89813098 80.06792476,11.10624313 79.54404064,11.10624313 L1.9753075,11.10624313 C1.45142338,11.10624313 0.94899619,10.89813098 0.57855417,10.52768896 0.20811216,10.15724695 0,9.65481975 0,9.13093563 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                            ></path>
+                                                        </clipPath>
+                                                        <path
+                                                            id="THJT5kVy2lfCuAvo"
+                                                            d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,9.13093563 C81.51934814,9.65481975 81.31123599,10.15724695 80.94079397,10.52768896 80.57035195,10.89813098 80.06792476,11.10624313 79.54404064,11.10624313 L1.9753075,11.10624313 C1.45142338,11.10624313 0.94899619,10.89813098 0.57855417,10.52768896 0.20811216,10.15724695 0,9.65481975 0,9.13093563 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                            style="
+                                                                fill: none;
+                                                                stroke: transparent;
+                                                            "
+                                                        ></path>
+                                                        <path
+                                                            id="x3DXGnNjzEBr3zx5"
+                                                            d="M1.9753075,0 L79.54404064,0 C80.63497285,0 81.51934814,0.88437529 81.51934814,1.9753075 L81.51934814,9.13093563 C81.51934814,9.65481975 81.31123599,10.15724695 80.94079397,10.52768896 80.57035195,10.89813098 80.06792476,11.10624313 79.54404064,11.10624313 L1.9753075,11.10624313 C1.45142338,11.10624313 0.94899619,10.89813098 0.57855417,10.52768896 0.20811216,10.15724695 0,9.65481975 0,9.13093563 L0,1.9753075 C0,1.45142338 0.20811216,0.94899619 0.57855417,0.57855417 0.94899619,0.20811216 1.45142338,0 1.9753075,0 Z"
+                                                            style="
+                                                                fill: none;
+                                                                stroke-linecap: butt;
+                                                                vector-effect: non-scaling-stroke;
+                                                                stroke: #f8f6f1;
+                                                            "
+                                                        ></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="TnupLkcyAbUKxm3X" style="z-index: 25">
+                                    <div
+                                        id="ysiH1fmu53opJRBw"
+                                        style="
+                                            box-sizing: border-box;
+                                            width: 100%;
+                                            height: 100%;
+                                            transform: rotate(0deg);
+                                        "
+                                    >
+                                        <div
+                                            id="WwH33XxFvgFlginy"
+                                            style="
+                                                opacity: 1;
+                                                display: flex;
+                                                box-sizing: border-box;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                width: 100%;
+                                                height: 100%;
+                                            "
+                                        >
+                                            <p
+                                                id="haNXhAzPATVmHaM1"
+                                                style="
+                                                    color: #ffffff;
+                                                    font-family: YAEnS2G4JLg-0;
+                                                    line-height: 1.29167205em;
+                                                    text-align: center;
+                                                    text-transform: none;
+                                                    letter-spacing: 0em;
+                                                "
+                                            >
+                                                <span
+                                                    id="RrkHyzjp21JlQ0Qd"
+                                                    style="color: #ffffff"
+                                                    >로그​인 화면으로 이동</span
+                                                ><br />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </form>
+                    </div>
+
+                    <div id="KrgC2qhTQ8iCIV9v">
+                        <div
+                            id="t9twjRiHmfa7oXyN"
+                            style="display: grid; position: relative"
+                        >
+                            <div id="b8dMNtOTt8HC8neS" style="z-index: 13">
+                                <div
+                                    id="RiS4IYcyibRF9UO5"
+                                    style="padding-top: 154.19847328%"
+                                >
+                                    <div
+                                        id="GMxbeDWAtBIvf9QP"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <div
+                                            class="animation_container"
+                                            style="width: 100%; height: 100%"
+                                        >
+                                            <div
+                                                class="animated"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    animation: 1562ms ease 100ms
+                                                            1 normal both
+                                                            running
+                                                            rise-RIGHT-10e8f20d-0b92-45d4-bf32-dde7285f82a1,
+                                                        400ms linear 0s 1 normal
+                                                            both linear_fade;
+                                                "
+                                            >
+                                                <div
+                                                    id="iabbKxmP4bMCqA8i"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="a0yaeaFV3R8cLfaS"
+                                                        class="video_container"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="XhO3dNK7DHrHxzxG"
+                                                            style="
+                                                                width: calc(
+                                                                    100% *
+                                                                        max(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                height: calc(
+                                                                    100% /
+                                                                        min(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                opacity: 1;
+                                                                animation: auto
+                                                                    ease 0s 1
+                                                                    normal none
+                                                                    running none;
+                                                            "
+                                                        >
+                                                           
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                id="XJgw0hydXjqnrj3U"
+                                style="
+                                    display: grid;
+                                    position: relative;
+                                    grid-area: 3 / 2 / 8 / 7;
+                                "
+                            >
+                                <div id="S6gtxYo3zCJRNrXq" style="z-index: 14">
+                                    <div
+                                        id="btcr61Fg0RFWRDIq"
+                                        style="padding-top: 103.06627102%"
+                                    >
+                                        <div
+                                            id="uixJTsD32RsyU4MC"
+                                            style="
+                                                position: absolute;
+                                                top: 0px;
+                                                left: 0px;
+                                                width: 100%;
+                                                height: 100%;
+                                            "
+                                        >
+                                            <div
+                                                class="animation_container"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                "
+                                            >
+                                                <div
+                                                    class="animated"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        animation: 1562ms ease
+                                                                100ms 1 normal
+                                                                both running
+                                                                rise-RIGHT-74bd5f17-b54f-4380-9a51-92872a1544fd,
+                                                            400ms linear 0s 1
+                                                                normal both
+                                                                linear_fade;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="dII4JZGRh4Q4eTRe"
+                                                        style="
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            opacity: 1;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="Zsn1mSeysxmVBg7N"
+                                                            class="video_container"
+                                                            style="
+                                                                transform: scale(
+                                                                    1,
+                                                                    1
+                                                                );
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                overflow: hidden;
+                                                                position: relative;
+                                                            "
+                                                        >
+                                                            <div
+                                                                id="HamB7RbNVeKWecK9"
+                                                                style="
+                                                                    width: calc(
+                                                                        100% *
+                                                                            max(
+                                                                                1,
+                                                                                var(
+                                                                                    --scale-fill,
+                                                                                    1
+                                                                                )
+                                                                            )
+                                                                    );
+                                                                    height: calc(
+                                                                        100% /
+                                                                            min(
+                                                                                1,
+                                                                                var(
+                                                                                    --scale-fill,
+                                                                                    1
+                                                                                )
+                                                                            )
+                                                                    );
+                                                                    position: absolute;
+                                                                    top: 50%;
+                                                                    left: 50%;
+                                                                    opacity: 1;
+                                                                    animation: auto
+                                                                        ease 0s
+                                                                        1 normal
+                                                                        none
+                                                                        running
+                                                                        none;
+                                                                "
+                                                            >
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="YcH2NXrTLgTVkCXU" style="z-index: 15">
+                                    <div
+                                        id="Ffz4RknUtcwfjHnG"
+                                        style="padding-top: 148.13614263%"
+                                    >
+                                        <div
+                                            id="B9ZfhtwMlG3wcEiP"
+                                            style="
+                                                position: absolute;
+                                                top: 0px;
+                                                left: 0px;
+                                                width: 100%;
+                                                height: 100%;
+                                            "
+                                        >
+                                            <div
+                                                class="animation_container"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                "
+                                            >
+                                                <div
+                                                    class="animated"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        animation: 1562ms ease
+                                                                100ms 1 normal
+                                                                both running
+                                                                rise-RIGHT-2aa8c752-cf10-43fa-8c8f-008fae0fb416,
+                                                            400ms linear 0s 1
+                                                                normal both
+                                                                linear_fade;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="xUMDLsrLpFwj5jqN"
+                                                        style="
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            opacity: 1;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="oMFXCnelfp1gym2v"
+                                                            class="video_container"
+                                                            style="
+                                                                transform: scale(
+                                                                    1,
+                                                                    1
+                                                                );
+                                                                width: 100%;
+                                                                height: 100%;
+                                                                overflow: hidden;
+                                                                position: relative;
+                                                            "
+                                                        >
+                                                            <div
+                                                                id="fJ3pa72Hwi7jwBoh"
+                                                                style="
+                                                                    width: calc(
+                                                                        100% *
+                                                                            max(
+                                                                                1,
+                                                                                var(
+                                                                                    --scale-fill,
+                                                                                    1
+                                                                                )
+                                                                            )
+                                                                    );
+                                                                    height: calc(
+                                                                        100% /
+                                                                            min(
+                                                                                1,
+                                                                                var(
+                                                                                    --scale-fill,
+                                                                                    1
+                                                                                )
+                                                                            )
+                                                                    );
+                                                                    position: absolute;
+                                                                    top: 50%;
+                                                                    left: 50%;
+                                                                    opacity: 1;
+                                                                    animation: auto
+                                                                        ease 0s
+                                                                        1 normal
+                                                                        none
+                                                                        running
+                                                                        none;
+                                                                "
+                                                            >
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Wlsy8gypwVpKNJ7J" style="z-index: 16">
+                                <div
+                                    id="slYT8Xta9zNzsAW9"
+                                    style="padding-top: 201.56555773%"
+                                >
+                                    <div
+                                        id="AIr6KpI0wXdWB4wX"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <div
+                                            class="animation_container"
+                                            style="width: 100%; height: 100%"
+                                        >
+                                            <div
+                                                class="animated"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    animation: 1562ms ease 100ms
+                                                            1 normal both
+                                                            running
+                                                            rise-RIGHT-49a47a1a-fad4-45a8-8085-6f587ddd2da7,
+                                                        400ms linear 0s 1 normal
+                                                            both linear_fade;
+                                                "
+                                            >
+                                                <div
+                                                    id="qLFFPcv9XeNyo2ZG"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="G26c3t27Xvh3rBtJ"
+                                                        class="video_container"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="ZpzkxU4pfiJh9SGX"
+                                                            style="
+                                                                width: calc(
+                                                                    100% *
+                                                                        max(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                height: calc(
+                                                                    100% /
+                                                                        min(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                opacity: 1;
+                                                                animation: auto
+                                                                    ease 0s 1
+                                                                    normal none
+                                                                    running none;
+                                                            "
+                                                        >
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="YXM4hFhz5vIyAXXi" style="z-index: 17">
+                                <div
+                                    id="z453KJL1bIkby8FK"
+                                    style="padding-top: 78.77813505%"
+                                >
+                                    <div
+                                        id="K4RDvBZxB0Ae9Spn"
+                                        style="
+                                            position: absolute;
+                                            top: 0px;
+                                            left: 0px;
+                                            width: 100%;
+                                            height: 100%;
+                                        "
+                                    >
+                                        <div
+                                            class="animation_container"
+                                            style="width: 100%; height: 100%"
+                                        >
+                                            <div
+                                                class="animated"
+                                                style="
+                                                    width: 100%;
+                                                    height: 100%;
+                                                    animation: rise-RIGHT-a019858a-0c7d-47af-8c32-55a9a29e1254
+                                                            1562ms 100ms both
+                                                            paused,
+                                                        linear_fade 400ms linear
+                                                            both paused;
+                                                "
+                                            >
+                                                <div
+                                                    id="dYyJCkEvoLnEnCb0"
+                                                    style="
+                                                        width: 100%;
+                                                        height: 100%;
+                                                        opacity: 1;
+                                                    "
+                                                >
+                                                    <div
+                                                        id="oYX0FrUn5xoyWPE1"
+                                                        class="video_container"
+                                                        style="
+                                                            transform: scale(
+                                                                1,
+                                                                1
+                                                            );
+                                                            width: 100%;
+                                                            height: 100%;
+                                                            overflow: hidden;
+                                                            position: relative;
+                                                        "
+                                                    >
+                                                        <div
+                                                            id="Seqje9kdD9RxLdDV"
+                                                            style="
+                                                                width: calc(
+                                                                    100% *
+                                                                        max(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                height: calc(
+                                                                    100% /
+                                                                        min(
+                                                                            1,
+                                                                            var(
+                                                                                --scale-fill,
+                                                                                1
+                                                                            )
+                                                                        )
+                                                                );
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 50%;
+                                                                opacity: 1;
+                                                            "
+                                                        >
+                                                            <img
+                                                                src="videos/8610d3c8b62c5a614eddf459833f9725.gif"
+                                                                loading="eager"
+                                                                style="
+                                                                    width: 100%;
+                                                                    height: 100%;
+                                                                    display: block;
+                                                                    object-fit: cover;
+                                                                    object-position: 50%
+                                                                        50%;
+                                                                    transform: translate(
+                                                                            -50%,
+                                                                            -50%
+                                                                        )
+                                                                        rotate(
+                                                                            0deg
+                                                                        );
+                                                                "
+                                                            />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script
+                src="js/388fb330498371d4935abbff11d34d4c30842ca3c4a128cdd290d29db98acb41.js"
+                async=""
+                nonce=""
+            ></script>
+        </div>
+{% endblock %}
+{% block js %}
+    <script>const csrf_token = `{{ csrf_token }}` </script>
+    <script>
+            document.getElementById("registerForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // 폼 제출 방지
+            const pw1 = document.querySelector(".pw1").value;
+            const pw2 = document.querySelector(".pw2").value;
+        
+            if (pw1 !== pw2) {
+                alert("비밀번호가 일치하지 않습니다.");
+            } else {
+                this.submit(); // 비밀번호가 일치하면 폼 제출
+            }
+        });
+
+    </script>
+    <script src="{% static 'member/js/login/register.js' %}"></script>
+{% endblock %}
